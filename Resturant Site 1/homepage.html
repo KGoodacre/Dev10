@@ -1,0 +1,128 @@
+<html>
+    <header>
+        <header class = "top-heading">Grand Mexican Restaurant</header>
+        
+        <style>
+            .top-heading {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 40px;
+                margin-left: auto ;
+                margin-right: auto ;
+                width:480px;
+            }
+
+            ul {
+                    list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        background-color: #333;
+                }
+
+            li {
+                    float: left;
+            }
+
+            li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+            }
+
+            li a:hover {
+                      background-color: #111;
+            }
+
+            .mybanner {
+                 display: block;
+                 margin-left: auto;
+                 margin-right: auto
+            }
+
+            .desc{
+                font-size: 21px;
+                width: 420px ;
+                margin-left: auto ;
+                margin-right: auto ;
+                
+            }
+
+
+            .myfooter {
+                
+                font-size: 15px;
+                font-family: Georgia,Serif;
+                width: 350px ;
+                left: 550;
+                bottom: 0;
+                color: white;
+                font-weight: bold;
+                margin-left: auto ;
+                margin-right: auto ;
+
+            }
+
+            .footer { background: #333; border: 1px solid #333;
+                padding-top: 5px;
+                padding-bottom: 0px;
+                position:fixed;
+                bottom:0;
+                width:98.5%; } 
+
+
+            .phone {
+                margin-left: auto;
+                margin-right: auto;
+                width: 12em
+            }
+
+            hr {
+              border:2px solid black;
+              position: fixed;
+              left: 0;
+              bottom: 0;
+            }
+        </style>
+
+        <script>
+            function load_home() {
+                document.getElementById("desc").innerHTML='<object type="text/html" data="home.html" ></object>';
+            }
+        </script>
+    </header>
+    <body>
+       <div  class = "header">
+        <nav>
+            <ul>
+                 <li><a  href="homepage.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                 <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+       </div>
+
+       <div>
+            <img class = "mybanner" src = "banner.jpg">
+       </div>
+       <div class = desc>
+        <p class = "res-desc">
+            Grand Mexican Restaurant open its doors in 2005 with the first location in Texas.            Serving only the finest quality of Mexican food made fresh every day, and continuing to be committed to share the same vision: Understanding our responsibilities, being accountable to our guests, each other, and our community, from the owners, to all the staff. 
+            GMR has 7 locations in United States  to serve you and your family. Find your closest GMR restaurant and 
+            come join us for lunch or dinner today, or order take-out for home!. Each restaurant has an interesting tale to tell on account of its origin or inspiration. The two bars namely the historic 1911 Bar and the Royal Bar- Patiala Peg feature an impressive and extensive range of beverages and the most extensive wine list in the city, leaving one asking for more.
+        </p>
+       </div>
+       <hr>
+       
+       <div class = "footer">
+        <footer class = "myfooter" >
+         <p>4120 TX-360 #101, Fort Worth, TX 76155</p>           
+         <p class = "phone">PH: +1 817-571-7299</p>
+        </footer>
+    </div>
+       
+
+        
+    </body>
+</html>

@@ -1,0 +1,138 @@
+<html>
+    <header>
+        <header class = "top-heading">Grand Mexican Restaurant</header>
+        
+        <style>
+            .top-heading {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 40px;
+                margin-left: auto ;
+                margin-right: auto ;
+                width:480px;
+            }
+
+            ul {
+                    list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        background-color: #333;
+                }
+
+            li {
+                    float: left;
+            }
+
+            li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+            }
+
+            li a:hover {
+                      background-color: #111;
+            }
+
+            .mybanner {
+                 display: block;
+                 margin-left: auto;
+                 margin-right: auto
+            }
+
+            .desc{
+                font-size: 21px;
+                width: 90% ;
+                margin-left: auto ;
+                margin-right: auto ;
+                
+            }
+
+
+            
+            .myfooter {
+                
+                font-size: 15px;
+                font-family: Georgia,Serif;
+                width: 350px ;
+                left: 550;
+                bottom: 0;
+                color: white;
+                font-weight: bold;
+                margin-left: auto ;
+                margin-right: auto ;
+
+            }
+
+            .footer { background: #333; border: 1px solid #333;
+                padding-top: 5px;
+                padding-bottom: 0px;
+                position:fixed;
+                bottom:0;
+                width:98.5%; } 
+            .phone {
+                margin-left: auto;
+                margin-right: auto;
+                width: 12em
+            }
+
+            hr {
+              border:2px solid black;
+            }
+
+            tr {
+                margin-bottom: 100px;
+            }
+
+            .menu-table {
+                border-spacing: 30px;
+                font-size: 20px;
+            }
+        </style>
+
+        <script>
+            function load_home() {
+                document.getElementById("desc").innerHTML='<object type="text/html" data="home.html" ></object>';
+            }
+        </script>
+    </header>
+    <body>
+       <div  class = "header">
+        <nav>
+            <ul>
+                <li><a  href="homepage.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                 <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+       </div>
+
+       <div class = desc>
+            <table style="text-align: center;" class = "menu-table"> 
+                <tr >
+                    <td><p><b>Taquitos</b><br>Aserved with cheese, lettuce, tomatoes and jalapenos<br>$6.65</p></td>
+                    <td><p><b>Nachos Combo</b><br>Served with cheese, beef and beans, lettuce, tomatoes and jalapenos<br>$8.65</p></td>
+                    <td><p><b>Cheese Dip</b><br>Ranchero cheese melted with jalapenos and spices<br>$15.5</p></td>
+                </tr>
+               
+                <tr>
+                    <td><p><b>Guacamole Dip</b><br>Fresh Hass avocado mixed with onions, tomatoes, and cilantro <br>$6.25</p></td>
+                    <td><p><b>Choriqueso</b><br>Mexican sausage mixed with melted cheese, and served with tortillas and jalapenos<br>$8.35</p></td>
+                    <td><p><b>Baja Enchilada Soup</b><br>ender pieces of chicken in a tomato base with black beans, corn, tomatoes and onions<br>$6.35</p></td>
+                </tr>
+               
+            </table>
+       </div>
+     
+       
+       <div class = "footer">
+        <footer class = "myfooter" >
+         <p>4120 TX-360 #101, Fort Worth, TX 76155</p>           
+         <p class = "phone">PH: +1 817-571-7299</p>
+        </footer>
+    </div>
+
+        
+    </body>
+</html>

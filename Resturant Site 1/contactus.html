@@ -1,0 +1,178 @@
+<html>
+    <header>
+        <header class = "top-heading">Grand Mexican Restaurant</header>
+        
+        <style>
+            .top-heading {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 40px;
+                margin-left: auto ;
+                margin-right: auto ;
+                width:480px;
+            }
+
+            ul {
+                    list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        background-color: #333;
+                }
+
+            li {
+                    float: left;
+            }
+
+            li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+            }
+
+            li a:hover {
+                      background-color: #111;
+            }
+
+            .mybanner {
+                 display: block;
+                 margin-left: auto;
+                 margin-right: auto;
+            }
+
+            .desc {
+                font-size: 18px;
+                width: 520px ;
+                margin-left: auto ;
+                margin-right: auto ;
+                
+               
+                
+            }
+
+
+            
+            .myfooter {
+                
+                font-size: 15px;
+                font-family: Georgia,Serif;
+                width: 350px ;
+                left: 550;
+                bottom: 0;
+                color: white;
+                font-weight: bold;
+                margin-left: auto ;
+                margin-right: auto ;
+
+            }
+
+            .footer { background: #333; border: 1px solid #333;
+                padding-top: 5px;
+                padding-bottom: 0px;
+                position:fixed;
+                bottom:0;
+                width:98.5%; } 
+                
+            .phone {
+                margin-left: auto;
+                margin-right: auto;
+                width: 12em
+            }
+
+            hr {
+              border:2px solid black;
+            }
+
+
+            .form-table {
+                font-size: 22px;
+                border-spacing: 15px;
+            }
+
+               
+        </style>
+    </header>
+    <body>
+       <div  class = "header">
+        <nav>
+            <ul>
+                <li><a  href="homepage.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                 <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+       </div>
+
+      
+       <div class = desc>
+            <form action="">
+                <table class = "form-table">
+                    <tr>
+                       <td>Name:</td>
+                        <td><input id=name name=name></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Email:</td>
+                        <td><input id=email name=email>
+                    </tr>
+                    
+                    <tr>
+                        <td>Phone:</td>
+                        <td><input id=phone name=phone></td>
+                    </tr>
+                    
+                    <tr>
+                       <td>Reason for Inquiry:</td>
+                        <td><select>
+                            <option value="catering">Catering</option>
+                            <option value="privateparty">Private party</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">other</option>
+                        </select>
+                        </td>
+                    </tr>
+                   
+                    <tr>
+                       <td>Additional Information:</td>
+                        <td><textarea rows="5" cols="35"></textarea></td>
+                    </tr>
+                   
+                    <tr>
+                        <td>Have you been to resturant:</td>
+                       <td> <input type="radio" name="yes"> Yes
+                        <input type="radio" name="no"> No</td>
+                    </tr>
+                 
+                    <tr>
+                        <td> Best days to contact you:</td>
+                        <td><input type="checkbox" name="m">M
+                        <input type="checkbox" name="t">T
+                        <input type="checkbox" name="t">W
+                        <input type="checkbox" name="t">Th
+                        <input type="checkbox" name="t">F</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><button>Submit Request</button></td>
+                    </tr>
+                    
+                </table>
+              </form> 
+              
+       </div>
+      
+       
+       <div class = "footer">
+           <footer class = "myfooter" >
+            <p>4120 TX-360 #101, Fort Worth, TX 76155</p>           
+            <p class = "phone">PH: +1 817-571-7299</p>
+           </footer>
+       </div>
+       
+
+        
+    </body>
+</html>
