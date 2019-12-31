@@ -1,0 +1,156 @@
+<html>
+    <head>
+        
+        <title>Resturant Site</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <header class = "top-heading">Grand Mexican Restaurant</header>
+        <link rel="stylesheet" type="text/css" href="resturantStyles.css">
+
+        <script>    
+                function firstfocus()
+                {
+                    var uid = document.reqform.name.focus();
+                    return true;
+                }     
+                function userid_validation()
+                {
+                    var uid = document.reqform.name;
+                    var uid_len = uid.value.length;
+                     if (uid_len == 0)
+                    {
+                        alert("Name should not be empty");
+                        uid.focus();
+                        return false;
+                     }
+                    document.reqform.inputEmail3.focus();
+                    return true;
+                }
+                function emailid_validation()
+                {
+                    var uid = document.reqform.inputEmail3;
+                    var uid_len = uid.value.length;
+                    if (uid_len == 0)
+                    {
+                        alert("Email should not be empty");
+                        uid.focus();
+                    return false;
+                     }
+                    document.reqform.phone.focus();
+                    return true;
+                }
+                function phone_validation()
+                {
+                    var uid = document.reqform.phone;
+                    var uid_len = uid.value.length;
+                    if (uid_len == 0)
+                    {
+                        alert("Phone should not be empty");
+                        uid.focus();
+                    return false;
+                    }
+                }
+        </script>
+           
+
+        <style>
+           
+            .desc {
+                font-size: 18px;
+                width: 620px ;
+                margin-left: auto ;
+                margin-right: auto ;        
+            }
+
+            hr {
+              border:2px solid black;
+            }
+            .form-table {
+                font-size: 20px;
+                border-spacing: 15px;
+                border-collapse: separate;    
+            }
+            .mylabel { 
+                        font-weight: bold;    
+            }
+
+         </style>
+    </head>
+    <body onload="firstfocus();">
+       <div  class = "header">
+            <nav>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a href="homepage.html" class="fas fa-home" style="font-size:15px;"></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+       </div>
+       <div class = desc>
+            <form action="" id = "form1"class = "form-group row" name = "reqform">
+                <table class = "form-table">
+                    <tr>
+                       <td class = "col-sm-2 col-form-label">Name:</td>
+                        <td><input type="text" class="form-control" id="name" onblur="userid_validation()" placeholder="Name" value="" required="required" data-error="Please enter your full name.">
+                            <div class="help-block with-errors"></div></td>
+                    </tr>
+                    <tr>
+                        <td label for="email" class="col-sm-2 col-form-label" >Email:</td>
+                        <td><input type="email" class="form-control" id="inputEmail3" onblur="emailid_validation()" placeholder="name@example.com" required="required"> 
+                    </tr>
+                    <tr>
+                        <td label for="inputPhone3" class="col-sm-2 col-form-label">Phone:</td>
+                        <td><input type="number" class="form-control" required="required" onblur="phone_validation()" id="phone" placeholder="Phone"></td>
+                    </tr>
+                    <tr>
+                       <td class = "sel1">Reason for Inquiry:</td>
+                        <td><select class="form-control" required="required" id="sel1" onblur="sel1_validation()">
+                            <option value="catering">Catering</option>
+                            <option value="privateparty">Private party</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">other</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                       <td class = "form-group">Additional Information:</td>
+                        <td><textarea class="form-control" rows="5" id="comment"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Have you been to resturant:</td>
+                       <td> <input type="radio" required="required" name="optradio" id="been"  nblur="been_validation()"> Yes
+                        <input type="radio" name="optradio"> No</td>
+                    </tr>
+                    <tr>
+                        <td class = "form-check-input"> Best days to contact you:</td>
+                        <td><input type="checkbox" required="required" name="m">M
+                        <input class="form-check-input" type="checkbox" name="t">T
+                        <input class="form-check-input" type="checkbox" type="checkbox" name="W">W
+                        <input class="form-check-input" type="checkbox" type="checkbox" name="Th">Th
+                        <input class="form-check-input" type="checkbox" type="checkbox" name="F">F</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button class="btn btn-primary">Submit Request</button></td>
+                    </tr> 
+                </table>
+            </form>     
+       </div>
+       <div class = "footer">
+           <footer class = "myfooter" >
+            <p>4120 TX-360 #101, Fort Worth, TX 76155</p>           
+            <p class = "phone">PH: +1 817-571-7299</p>
+           </footer>
+       </div> 
+    </body>
+</html>
